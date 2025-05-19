@@ -102,5 +102,12 @@ In the two sample case,
 
 the test statistic(t) : We take the difference between the sample statistics for the two groups, subtract the population difference between the two groups, then divide by the standard error.
 
+Calculating p-values from t-statistics:
+
+The test statistic, t, follows a t-distribution. t-distributions have a parameter called the degrees of freedom,df.
+
+As we increase the degrees of freedom, the t-distribution gets closer to the normal distribution. 
+In fact, a normal distribution is a t-distribution with infinite degrees of freedom. 
+Degrees of freedom are defined as the maximum number of logically independent values in the data sample.
 
 A/B testing lets you compare scenarios to see which best achieves some goal.
