@@ -110,6 +110,8 @@ As we increase the degrees of freedom, the t-distribution gets closer to the nor
 In fact, a normal distribution is a t-distribution with infinite degrees of freedom. 
 Degrees of freedom are defined as the maximum number of logically independent values in the data sample.
 
+df = n(first group) + n(second group) - 2
+
 P value = t.cdf(z_score, loc = 0, scale=1) --> for left tail test (We use t distribution here instead of norm)
 P value = 1 - t.cdf(z_score, loc = 0, scale=1) --> for right tail test
 
