@@ -84,6 +84,8 @@ Type II: If we support the null hypothesis when the alternative hypothesis was c
 In the above example we considered only annual compensation and found the hypothesis.
 T-tests is used if there are two or more groups.
 for example- considering annual compensation and the age data scientists started coding (child or adult) from the example mentioned above: 
+We have a smaller sample size.
+The population standard deviation is unknown.
 Used to determine whether there is a significant difference between the means of two groups.
 
 Hypothesis: 
