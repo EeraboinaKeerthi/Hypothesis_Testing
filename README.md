@@ -96,8 +96,9 @@ Ha: the alternative hypothesis is that the population mean for users who started
 Ha: population mean of child > population mean of adults 
     population mean of child - population mean of adults > 0
 
-A/B testing lets you compare scenarios to see which best achieves some goal.
+In the two sample case, 
 
+the test statistic(t) : We take the difference between the sample statistics for the two groups, subtract the population difference between the two groups, then divide by the standard error.
 
 
 A/B testing lets you compare scenarios to see which best achieves some goal.
