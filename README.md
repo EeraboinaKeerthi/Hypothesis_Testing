@@ -79,6 +79,24 @@ Type I: If we support the alternative hypothesis when the null hypothesis was co
 
 Type II: If we support the null hypothesis when the alternative hypothesis was correct, we made a false negative error. 
 
+**T-tests:**
+
+In the above example we considered only annual compensation and found the hypothesis.
+T-tests is used if there are two or more groups.
+for example- considering annual compensation and the age data scientists started coding (child or adult) from the example mentioned above: 
+Used to determine whether there is a significant difference between the means of two groups.
+
+Hypothesis: 
+
+H0: The null hypothesis is that the population mean for the two groups is the same, and 
+H0: population mean of child = population mean of adults 
+    population mean of child - population mean of adults = 0
+
+Ha: the alternative hypothesis is that the population mean for users who started coding as children is greater than for users who started coding as adults
+Ha: population mean of child > population mean of adults 
+    population mean of child - population mean of adults > 0
+
+A/B testing lets you compare scenarios to see which best achieves some goal.
 
 
 
