@@ -112,7 +112,7 @@ Degrees of freedom are defined as the maximum number of logically independent va
 
 df = n(first group) + n(second group) - 2
 
-P value = t.cdf(z_score, loc = 0, scale=1) --> for left tail test (We use t distribution here instead of norm)
-P value = 1 - t.cdf(z_score, loc = 0, scale=1) --> for right tail test
+P value = t.cdf(t_stat, df=degrees_of_freedom) --> for left tail test (We use t distribution here instead of norm)
+P value = 1 - t.cdf(t_stat, df=degrees_of_freedom) --> for right tail test
 
 A/B testing lets you compare scenarios to see which best achieves some goal.
