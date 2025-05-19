@@ -1,6 +1,6 @@
 # Hypothesis_Testing
 
-Let us consider a subset of the survey responses from users who identified as Data Scientists fron Stack-overflow survey.
+Let us consider a subset of the survey responses from users who identified as Data Scientists from Stack-overflow survey.
 
 Hypothesizing about the mean:
 
@@ -12,7 +12,6 @@ Since variables have arbitrary units and ranges, before we test our hypothesis, 
 For hypothesis testing, we use a variation where we take the sample statistic, subtract the hypothesized parameter value, and divide by the standard error. The result is called a z-score.
 
 Hypothesis testing use case:
-
 Determining whether sample statistics are close to or far away from expected(hypothesized) values.
 
 Plot of the probability density function for the standard normal distribution, which is a normal distribution with mean of zero and standard deviation of one. It's often called the z-distribution, and z-scores are related to this distribution.
@@ -56,8 +55,29 @@ We pass the z-score to the standard normal CDF, norm.cdf, from scipy.stats with 
 
 For right-tail test, the p-value is calculated by taking one minus the norm.cdf result. 
 
-P avlue = norm.cdf(z_score, loc = 0, scale=1) --> for left tail test
+P value = norm.cdf(z_score, loc = 0, scale=1) --> for left tail test
 P value = 1 - norm.cdf(z_score, loc = 0, scale=1) --> for right tail test 
+
+p-values quantify how much evidence there is for the null hypothesis. 
+
+Large p-values indicate a lack of evidence for the alternative hypothesis, sticking with the assumed null hypothesis instead. 
+
+Small p-values make us doubt this original assumption in favor of the alternative hypothesis. 
+
+What defines the cutoff point between a small p-value and a large one? --> Significance level (alpha)
+
+The cutoff point is known as the significance level, and is denoted alpha. The appropriate significance level depends on the dataset and the discipline worked in. 
+Most common choices for alpha are 0.1, 0.05 and 0.01.
+
+If p <= alpha --> We reject null hypothesis 
+   p< alpha --> We fail to reject null hypothesis.
+It's important that we decide what the appropriate significance level should be before we run our tests.
+
+Types of Errors:
+
+Type I: If we support the alternative hypothesis when the null hypothesis was correct, we made a false positive error. 
+
+Type II: If we support the null hypothesis when the alternative hypothesis was correct, we made a false negative error. 
 
 
 
