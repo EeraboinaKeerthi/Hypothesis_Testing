@@ -115,4 +115,23 @@ df = n(first group) + n(second group) - 2
 P value = t.cdf(t_stat, df=degrees_of_freedom) --> for left tail test (We use t distribution here instead of norm)
 P value = 1 - t.cdf(t_stat, df=degrees_of_freedom) --> for right tail test
 
+**Paired t tests**
+
+For paired analyses, rather than considering the two variables separately, we can consider a single variable of the difference.
+
+pingouin.ttest()
+
+**Anova test** (Analysis of Variance)
+
+Used to compare more than two groups.ANOVA tests determine whether there are differences between the groups.
+We use the pingouin anova method to compare values across multiple groups. 
+
+pingouin.anova()
+
+**Chi-square test:**
+
+The test to compare proportions of successes in a categorical variable across groups of another categorical variable is called a chi-square test of independence.
+The chi-square test statistic is a square number, so it is always non-negative, so only the right tail tends to be of interest.
+
+
 A/B testing lets you compare scenarios to see which best achieves some goal.
